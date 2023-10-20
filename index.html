@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="div">
+        <h2>Survey Form</h2>
+        <form id="survey_form">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" required placeholder=" enter first name"><br><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" required placeholder="enter last name"><br><br>
+
+            <label for="date_of_birth">Date of Birth:</label>
+            <input type="date" id="date_of_birth" required><br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="" disabled selected>Select a country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <!-- Add more countries as needed -->
+            </select>
+            <br><br>
+
+            <label>Gender:</label><br>
+            <input type="checkbox" name="gender" value="Male"> Male
+            <input type="checkbox" name="gender" value="Female"> Female
+            <input type="checkbox" name="gender" value="Other"> Other
+            <br><br>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required placeholder="enter your profession"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder=" enter email "><br><br>
+
+            <label for="mobile_number">Mobile Number:</label>
+            <input type="tel" id="mobile_number" required placeholder="enter your mobile number"><br><br>
+
+            <button type="button" id="submit_button">Submit</button>
+            <button type="button" id="reset_button">Reset</button>
+        </form>
+    </div>
+
+    <script src="sr.js"></script>
+</body>
+
+</html>
